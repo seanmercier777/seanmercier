@@ -1,4 +1,5 @@
 {% extends 'layouts/base.html' %}
+{% load static %}
 
 {% block stylesheets %}{% endblock stylesheets %}
 
@@ -9,10 +10,31 @@
         <div class="site-main-inner">
             <div class="main-section">
                 <h1 class="main-title">Projects</h1>
+                <h2 class="blue">
+                    <i class="fa fa-edit"></i>
+                    Django
+                </h2>
 
-                <div class="vcard">
-                    <p>Django</p>
-                </div>
+                <p><strong>
+                    <a href="http://optaristo.com/" target="_blank">http://Optaristo.com/</a>
+                </strong></p>
+                <p>
+                    E-Bay webscrapping tool used by E-Bay Sports Card Memorabilia resellers
+                <p>
+                    <img src="{% static '/assets/img/img.png' %}" alt="" class="avatar">
+                </p>
+
+                </p>
+
+                <hr>
+
+                <p><strong>
+                    <a href="http://seanmercier.com/" target="_blank">http://seanmercier.com/</a>
+                </strong></p>
+                <p>
+                    Custom portfolio website made by me.
+                </p>
+
             </div>
 
         </div>

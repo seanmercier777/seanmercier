@@ -1,10 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% load static %}
+
+<link href="{% static 'assets/css/nucleo-icons.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/css/portfolio.css' %}" rel="stylesheet"/>
+
+<body class="cv">
+<div class="cv-page h-resume">
+    <div class="cv-page-inner">
+        <div class="cv-section cv-header p-contact h-card">
+            <div class="cv-header-avatar">
+                <img src="{% static '/assets/img/IMG_142.jpg' %}" alt="" class="avatar">
+            </div>
+            <div class="cv-header-text">
+                <h1 class="cv-header-name p-name">
+                    Sean Mercier
+                </h1>
+                <h2 class="cv-header-subname p-title">Full-stack Software Engineer</h2>
+                <div class="cv-header-lead p-note">
+                    4 years of professional experience in front-end and back-end engineering.
+                    Drive and Ambition to excel in exciting projects.<br>
+                </div>
+            </div>
+            <div class="cv-header-meta">
+                <div class="cv-header-meta-right">
+                    <div class="cv-header-meta-row">
+                        <a href="https://jtom.me/" rel="me" class="u-url">seanmercier.com/</a>
+                    </div>
+                    <div class="cv-header-meta-row">
+                        <a href="mailto:jacek@jtom.me" class="u-email">seanmercier777@gmail.com</a>
+                    </div>
+                    <div class="cv-header-meta-row">
+                        <a href="https://linkedin.com/in/jtompl/">linkedin.com/in/seanmercier/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3 class="cv-section-title">Skills</h3>
+            <div class="cv-section-content cv-section-content--indented">
+                <ul style="margin-top: 0">
+                    <li>
+                        Back-end: C#, Custom C#/T-SQL Frameworks, Django, node.js, SQL databases, Designed and Maintained several web app
+                        features with ~100k users.
+                    </li>
+                    <li>
+                        Front-end: JavaScript, Django(PUG), React
+                    </li>
+                    <li>
+                        Attentive to UI/UX details and high code quality. Fan of unit tests,
+                        functional programming, typed interfaces, and DDD.
+                    </li>
+                    <li>
+                        Can help in or take over: project management, estimation and
+                        ownership, tech recruitment, client negotiations.
+                    </li>
+                    <li>Used to participate in algorithm programming competitions and completed research in
+                        computational geometery.
+                    </li>
+                    <li>
+                        Open to evolving in: Java, Python, Go, Kubernetes.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3 class="cv-section-title">Experience</h3>
+            <div class="cv-section-content">
+                <div class="cv-timeline">
+                    <div class="cv-timeline-row p-experience h-event">
+                        <div class="cv-timeline-side">
+                            <div class="cv-timeline-company">Skyward Inc.</div>
+                            <div class="cv-timeline-date">Aug 2017 - Present</div>
+                            <a href="https://appunite.com" target="_blank" class="cv-timeline-website">skyward.com/</a>
+                        </div>
+                        <div class="cv-timeline-body p-summary">
+                            <h4 class="cv-timeline-position p-name">
+                                Software Engineer
+                            </h4>
+                            <p>
+                                Contributed to the development of a state reporting features for new state schools.
+                            </p>
+                            <ul>
+                                <li>
+                                    Designed T-SQL tables and indexes for performance rendering
+                                </li>
+                                <li>
+                                    Implemented performance focused C# code for large districts
+                                </li>
+                                <li>
+                                    Implemented benchmarking survey tools and developed performance standards for the
+                                    department
+                                </li>
+                                <li>
+                                    Actively helped manage, estimate and scope out the project.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cv-timeline-row p-experience h-event">
+                        <div class="cv-timeline-side">
+                            <div class="cv-timeline-company">Skyward Inc.</div>
+                            <div class="cv-timeline-date">Feb 2017 - Aug 2017</div>
+                            <a href="https://recruitee.com" target="_blank"
+                               class="cv-timeline-website">skyward.com</a>
+                        </div>
+                        <div class="cv-timeline-body p-summary">
+                            <h4 class="cv-timeline-position p-name">
+                                Software Quality Assurance Tester
+                            </h4>
+                            <p>
+                                Worked on black-box user focused testing for multiple state reporting teams and
+                                initiated Selenium testing.
+                            </p>
+                            <ul>
+                                <li>
+                                    Developed C# selenium automated tests and unit tests for state reporting
+                                </li>
+                                <li>
+                                    Created Acceptance Criteria and visual inspection of UI standards for projects
+                                </li>
+                                <li>
+                                    Documented defects in the product and investigate issues reported by support teams
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h3 class="cv-section-title">Education</h3>
+                        <div class="cv-section-content">
+                            <div class="cv-timeline">
+                                <div class="cv-timeline-row p-education h-event">
+                                    <div class="cv-timeline-side">
+                                        <div class="cv-timeline-company">
+                                            University of Wisconsin - Oshkosh
+                                        </div>
+                                        <div class="cv-timeline-date">2010 - 2016</div>
+                                        <a href="https://uwosh.edu/" target="_blank"
+                                           class="cv-timeline-website">uwosh.edu</a>
+                                    </div>
+                                    <div class="cv-timeline-body p-summary">
+                                        <div class="cv-timeline-position p-name">Major: Computer Science</div>
+                                        <div class="cv-timeline-position p-name">Minor: Philosophy</div>
+                                        <ul>
+                                            <li>
+                                                Contributed to Open Source projects like: OpenDSA and OpenMRS
+                                            </li>
+                                            <li>
+                                                Developed WebSites in html and javascript. Created full police console
+                                                database in
+                                                C# and mySQL
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h3 class="cv-section-title">Other perks</h3>
+                        <div class="cv-section-content cv-section-content--indented">
+                            <ul>
+                                <li>
+                                    Good public speaker. (Participated in Philosophy events and moderated bi-annual
+                                    round table discussion on current-events)
+                                </li>
+                                <li>
+                                    Knowledge of algorithms and data structures. (Completed research in terrain
+                                    visibility area of computation geometry.)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 </body>
-</html>
